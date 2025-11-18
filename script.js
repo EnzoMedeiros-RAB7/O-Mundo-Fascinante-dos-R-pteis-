@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function showResults() {
         questionArea.innerHTML = `<h2>Quiz Finalizado!</h2>`;
         optionsArea.innerHTML = '';
-        resultArea.innerHTML = `Você acertou **${score}** de **${questions.length}** perguntas!`;
+        resultArea.innerHTML = `Você acertou {score} de {questions.length} perguntas!`;
         
         nextButton.style.display = 'block';
         nextButton.textContent = 'Recomeçar Quiz';
@@ -139,4 +139,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inicia o Quiz
     nextButton.onclick = nextQuestion;
     loadQuestion();
+
 });

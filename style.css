@@ -1,0 +1,149 @@
+/* Reset Básico */
+body, h1, h2, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding-top: 60px; /* Espaço para o header fixo */
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50; /* Verde Réptil */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+/* Conteúdo */
+#conteudo-repteis article {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#conteudo-repteis h2 {
+    color: #00796B; /* Azul-Esverdeado Escuro */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #B2DFDB;
+    padding-bottom: 5px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 30px 0;
+}
+
+/* Quiz Section */
+#quiz-section {
+    background-color: #E8F5E9; /* Verde Pastel */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#quiz-section h2 {
+    color: #388E3C;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Botões de Opção */
+.option-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    background-color: white;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.option-button:hover {
+    background-color: #DCEDC8; /* Verde Claro */
+    border-color: #8BC34A;
+}
+
+.option-button.correct {
+    background-color: #81C784; /* Verde Sucesso */
+    color: white;
+    border-color: #4CAF50;
+}
+
+.option-button.incorrect {
+    background-color: #E57373; /* Vermelho Erro */
+    color: white;
+    border-color: #D32F2F;
+}
+
+/* Botão Próxima Pergunta/Reiniciar */
+#next-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #FF9800; /* Laranja */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#next-button:hover {
+    background-color: #F57C00;
+}
+
+/* Área de Resultado */
+#result-area {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
